@@ -289,6 +289,18 @@ body {
     color: var(--secondary);
     margin-bottom: 2rem;
     backdrop-filter: blur(10px);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
 }
 
 .hero-title {
@@ -324,7 +336,7 @@ body {
 .hero-stats {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 2.5rem;
     margin-bottom: 3rem;
     flex-wrap: wrap;
 }
@@ -338,6 +350,7 @@ body {
     font-weight: 800;
     color: var(--secondary);
     margin-bottom: 0.5rem;
+    text-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
 }
 
 .stat-label {
